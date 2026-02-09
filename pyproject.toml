@@ -1,0 +1,26 @@
+[project]
+name = "temporeg"
+version = "0.1.0"
+description = "Temporal registration of grid-imaged structures"
+authors = [
+    {name = "Staalduine",email = "simonvanstaalduine@home.nl"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "imreg (>=2025.1.1,<2026.0.0)",
+    "numpy (>=2.4.2,<3.0.0)",
+    "pandas (>=3.0.0,<4.0.0)",
+    "tifffile (>=2026.1.28,<2027.0.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.15.0"
+astral = "^3.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
